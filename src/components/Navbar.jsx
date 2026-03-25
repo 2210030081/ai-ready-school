@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Navbar = () => {
   return (
     <motion.nav
-      className="sticky top-0 z-50 bg-black/70 backdrop-blur-md border-b border-gray-800"
+      className="sticky top-0 z-50 bg-black/70 backdrop-blur-md border-b border-gray-800 shadow-md"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center gap-6">
               <motion.a
                 href="#products"
-                className="text-white hover:text-gray-300 transition-all duration-300 font-medium relative"
+                className="text-white hover:text-purple-400 transition font-medium relative"
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.2 }}
               >
@@ -42,7 +42,7 @@ const Navbar = () => {
               </motion.a>
               <motion.a
                 href="#about"
-                className="text-white hover:text-gray-300 transition-all duration-300 font-medium relative"
+                className="text-white hover:text-purple-400 transition font-medium relative"
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.2 }}
               >
@@ -56,7 +56,7 @@ const Navbar = () => {
               </motion.a>
               <motion.a
                 href="#contact"
-                className="text-white hover:text-gray-300 transition-all duration-300 font-medium relative"
+                className="text-white hover:text-purple-400 transition font-medium relative"
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.2 }}
               >
@@ -72,7 +72,7 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <motion.button
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-5 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold px-5 py-2 rounded-lg hover:scale-105 transition duration-300"
               whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}

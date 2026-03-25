@@ -37,9 +37,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="text-center max-w-4xl mx-auto px-6 relative z-10">
+      <div className="text-center max-w-3xl mx-auto px-6 relative z-10 space-y-6">
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-white mb-6"
+          className="text-5xl md:text-6xl font-bold text-white"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -64,7 +64,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-2xl text-gray-300 mb-8"
+          className="text-xl md:text-2xl text-gray-300 leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -73,13 +73,13 @@ const Hero = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <motion.button
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold px-8 py-4 rounded-lg hover:scale-105 transition duration-300"
             whileHover={{
               scale: 1.05,
               boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
@@ -91,7 +91,7 @@ const Hero = () => {
           </motion.button>
 
           <motion.button
-            className="border-2 border-gray-600 hover:border-gray-400 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300"
+            className="border-2 border-gray-600 hover:border-gray-400 text-white font-semibold px-8 py-4 rounded-lg hover:scale-105 transition duration-300"
             whileHover={{ scale: 1.05, borderColor: "#9CA3AF" }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.2 }}

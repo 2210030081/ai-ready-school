@@ -12,7 +12,7 @@ const ProductCard = ({ title, description, delay = 0 }) => {
       whileHover={{ y: -10 }}
     >
       <motion.div
-        className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-lg p-6 hover:border-gray-600 transition-all duration-300 relative overflow-hidden"
+        className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:border-gray-600 hover:scale-105 hover:shadow-xl transition duration-300 relative overflow-hidden"
         whileHover={{
           boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
           borderColor: "rgba(59, 130, 246, 0.5)"
@@ -35,7 +35,7 @@ const ProductCard = ({ title, description, delay = 0 }) => {
           </motion.h3>
 
           <motion.p
-            className="text-gray-300 group-hover:text-gray-200 transition-colors duration-300"
+            className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300"
             whileHover={{ x: 5 }}
             transition={{ duration: 0.2 }}
           >

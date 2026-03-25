@@ -30,10 +30,10 @@ const RoleHighlights = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {roles.map((role, index) => (
-            <motion.div key={index} className="bg-black/60 border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300" whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(59, 130, 246, 0.25)' }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.15 }} viewport={{ once: true }}>
+            <motion.div key={index} className="bg-black/60 border border-gray-800 rounded-xl p-6 hover:border-blue-500 hover:scale-105 hover:shadow-xl transition duration-300" whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(59, 130, 246, 0.25)' }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.15 }} viewport={{ once: true }}>
               <div className="text-4xl mb-4">{role.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{role.title}</h3>
-              <p className="text-gray-300 mb-4">{role.description}</p>
+              <p className="text-gray-300 leading-relaxed mb-4">{role.description}</p>
               <span className="inline-flex items-center gap-2 text-blue-400 font-semibold cursor-pointer">Learn more →</span>
             </motion.div>
           ))}

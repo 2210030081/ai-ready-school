@@ -27,9 +27,9 @@ const FAQ = () => {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <motion.div key={index} className="bg-black/50 border border-gray-800 rounded-xl p-5" initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: index * 0.1 }} viewport={{ once: true }}>
+            <motion.div key={index} className="bg-black/50 border border-gray-800 rounded-xl p-5 hover:scale-105 hover:shadow-xl transition duration-300" initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: index * 0.1 }} viewport={{ once: true }}>
               <h3 className="font-semibold text-white mb-2">{faq.q}</h3>
-              <p className="text-gray-300">{faq.a}</p>
+              <p className="text-gray-300 leading-relaxed">{faq.a}</p>
             </motion.div>
           ))}
         </div>

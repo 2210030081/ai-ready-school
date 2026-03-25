@@ -30,8 +30,8 @@ const Testimonials = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((item, index) => (
-            <motion.div key={index} className="bg-black/50 border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 * index }} viewport={{ once: true }}>
-              <p className="text-gray-200 italic mb-4">“{item.quote}”</p>
+            <motion.div key={index} className="bg-black/50 border border-gray-800 rounded-xl p-6 hover:border-blue-500 hover:scale-105 hover:shadow-xl transition duration-300" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 * index }} viewport={{ once: true }}>
+              <p className="text-gray-200 italic leading-relaxed mb-4">"{item.quote}"</p>
               <p className="font-semibold">{item.author}</p>
               <p className="text-gray-400 text-sm">{item.role}</p>
             </motion.div>
