@@ -1,16 +1,56 @@
-# React + Vite
+# AI Ready School Homepage Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+AI Ready School is a modern React-based homepage redesign for an educational technology platform. This UI/UX assignment focuses on improving clarity, navigation, and visual hierarchy for education decision-makers through a fully responsive, animated interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Problems Identified
 
-## React Compiler
+- Poor navigation hierarchy with unclear menu structure
+- Weak visual impact with static, generic messaging
+- Cluttered information architecture lacking visual separation
+- Inconsistent call-to-actions scattered throughout
+- Lack of engagement with no interactive elements
+- Mobile responsiveness issues
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Improvements Made
 
-## Expanding the ESLint configuration
+### Navigation & Header
+- Sticky navbar with backdrop blur and gradient brand identity
+- Animated hover effects on navigation links with gradient underlines
+- Responsive design with mobile-first approach
+- Prominent "Book Demo" CTA with hover animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Hero Section
+- Full-screen gradient background with floating animated elements
+- Dynamic gradient text effects on main heading
+- Staggered animations for sequential content reveal
+- Dual CTAs with distinct primary/secondary styling
+
+### Content Sections
+- Product overview redesigned using a card-based layout for better clarity
+- Improved content structure to make information easier to scan
+- Focused on simplifying the user journey for faster understanding
+
+### Final Call-to-Action
+- Compelling copy with social proof integration
+- Strong visual treatment using gradient backgrounds
+- Clear next steps with prominent action button
+
+## Tech Stack
+
+- **React 19**: Modern React with hooks and concurrent features
+- **Vite**: Fast build tool and development server
+- **Tailwind CSS**: Utility-first CSS framework
+- **Framer Motion**: Production-ready motion library
+- **ESLint**: Code linting and quality enforcement
+
+## Future Improvements
+
+- Accessibility enhancements (ARIA labels, keyboard navigation)
+- Performance monitoring and analytics integration
+- A/B testing framework for optimization
+- Content personalization based on user roles
+- Advanced micro-interactions and animations
+
+This redesign prioritizes clarity and simplicity to help school decision-makers quickly understand the platform and take action.
